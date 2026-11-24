@@ -68,7 +68,7 @@ jobs:
     steps:
     - uses: actions/checkout@v7
     - name: Clone acmetest
-      run: cd .. && git clone --depth=1 https://github.com/acmesh-official/acmetest.git  && cp -r acme.sh acmetest/
+      run: cd .. && git clone --depth=1 -b dns-test-43-char-dummy https://github.com/yaoge123/acmetest.git  && cp -r acme.sh acmetest/
     - name: Set env file
       run: |
         cd ../acmetest
@@ -120,7 +120,7 @@ jobs:
         brew untap aws/tap || true
         brew install socat
     - name: Clone acmetest
-      run: cd .. && git clone --depth=1 https://github.com/acmesh-official/acmetest.git  && cp -r acme.sh acmetest/
+      run: cd .. && git clone --depth=1 -b dns-test-43-char-dummy https://github.com/yaoge123/acmetest.git  && cp -r acme.sh acmetest/
     - name: Run acmetest
       run: |
         if [ "${{ secrets.TokenName1}}" ] ; then
@@ -187,7 +187,7 @@ jobs:
           echo 'GIT_CONFIG_KEY_0=safe.directory' >> "$GITHUB_ENV"
           echo 'GIT_CONFIG_VALUE_0=*' >> "$GITHUB_ENV"
     - name: Clone acmetest
-      run: cd .. && git clone --depth=1 https://github.com/acmesh-official/acmetest.git  && cp -r acme.sh acmetest/
+      run: cd .. && git clone --depth=1 -b dns-test-43-char-dummy https://github.com/yaoge123/acmetest.git  && cp -r acme.sh acmetest/
     - name: Run acmetest
       shell: bash
       run: |
@@ -233,7 +233,7 @@ jobs:
     steps:
     - uses: actions/checkout@v7
     - name: Clone acmetest
-      run: cd .. && git clone --depth=1 https://github.com/acmesh-official/acmetest.git  && cp -r acme.sh acmetest/
+      run: cd .. && git clone --depth=1 -b dns-test-43-char-dummy https://github.com/yaoge123/acmetest.git  && cp -r acme.sh acmetest/
     - uses: vmactions/freebsd-vm@v1
       with:
         debug-on-error: ${{ vars.DEBUG_ON_ERROR }}
@@ -292,7 +292,7 @@ jobs:
     steps:
     - uses: actions/checkout@v7
     - name: Clone acmetest
-      run: cd .. && git clone --depth=1 https://github.com/acmesh-official/acmetest.git  && cp -r acme.sh acmetest/
+      run: cd .. && git clone --depth=1 -b dns-test-43-char-dummy https://github.com/yaoge123/acmetest.git  && cp -r acme.sh acmetest/
     - uses: vmactions/ghostbsd-vm@v1
       with:
         debug-on-error: ${{ vars.DEBUG_ON_ERROR }}
@@ -349,7 +349,7 @@ jobs:
     steps:
     - uses: actions/checkout@v7
     - name: Clone acmetest
-      run: cd .. && git clone --depth=1 https://github.com/acmesh-official/acmetest.git  && cp -r acme.sh acmetest/
+      run: cd .. && git clone --depth=1 -b dns-test-43-char-dummy https://github.com/yaoge123/acmetest.git  && cp -r acme.sh acmetest/
     - uses: vmactions/openbsd-vm@v1
       with:
         debug-on-error: ${{ vars.DEBUG_ON_ERROR }}
@@ -406,7 +406,7 @@ jobs:
     steps:
     - uses: actions/checkout@v7
     - name: Clone acmetest
-      run: cd .. && git clone --depth=1 https://github.com/acmesh-official/acmetest.git  && cp -r acme.sh acmetest/
+      run: cd .. && git clone --depth=1 -b dns-test-43-char-dummy https://github.com/yaoge123/acmetest.git  && cp -r acme.sh acmetest/
     - uses: vmactions/netbsd-vm@v1
       with:
         debug-on-error: ${{ vars.DEBUG_ON_ERROR }}
@@ -464,7 +464,7 @@ jobs:
     steps:
     - uses: actions/checkout@v7
     - name: Clone acmetest
-      run: cd .. && git clone --depth=1 https://github.com/acmesh-official/acmetest.git  && cp -r acme.sh acmetest/
+      run: cd .. && git clone --depth=1 -b dns-test-43-char-dummy https://github.com/yaoge123/acmetest.git  && cp -r acme.sh acmetest/
     - uses: vmactions/dragonflybsd-vm@v1
       with:
         debug-on-error: ${{ vars.DEBUG_ON_ERROR }}
@@ -528,7 +528,7 @@ jobs:
     steps:
     - uses: actions/checkout@v7
     - name: Clone acmetest
-      run: cd .. && git clone --depth=1 https://github.com/acmesh-official/acmetest.git  && cp -r acme.sh acmetest/
+      run: cd .. && git clone --depth=1 -b dns-test-43-char-dummy https://github.com/yaoge123/acmetest.git  && cp -r acme.sh acmetest/
     - uses: vmactions/midnightbsd-vm@v1
       with:
         debug-on-error: ${{ vars.DEBUG_ON_ERROR }}
@@ -586,7 +586,7 @@ jobs:
     steps:
     - uses: actions/checkout@v7
     - name: Clone acmetest
-      run: cd .. && git clone --depth=1 https://github.com/acmesh-official/acmetest.git  && cp -r acme.sh acmetest/
+      run: cd .. && git clone --depth=1 -b dns-test-43-char-dummy https://github.com/yaoge123/acmetest.git  && cp -r acme.sh acmetest/
     - uses: vmactions/solaris-vm@v1
       with:
         debug-on-error: ${{ vars.DEBUG_ON_ERROR }}
@@ -646,7 +646,7 @@ jobs:
     steps:
     - uses: actions/checkout@v7
     - name: Clone acmetest
-      run: cd .. && git clone --depth=1 https://github.com/acmesh-official/acmetest.git  && cp -r acme.sh acmetest/
+      run: cd .. && git clone --depth=1 -b dns-test-43-char-dummy https://github.com/yaoge123/acmetest.git  && cp -r acme.sh acmetest/
     - uses: vmactions/omnios-vm@v1
       with:
         debug-on-error: ${{ vars.DEBUG_ON_ERROR }}
@@ -703,7 +703,7 @@ jobs:
     steps:
     - uses: actions/checkout@v7
     - name: Clone acmetest
-      run: cd .. && git clone --depth=1 https://github.com/acmesh-official/acmetest.git  && cp -r acme.sh acmetest/
+      run: cd .. && git clone --depth=1 -b dns-test-43-char-dummy https://github.com/yaoge123/acmetest.git  && cp -r acme.sh acmetest/
     - uses: vmactions/openindiana-vm@v1
       with:
         debug-on-error: ${{ vars.DEBUG_ON_ERROR }}
@@ -760,7 +760,7 @@ jobs:
     steps:
     - uses: actions/checkout@v7
     - name: Clone acmetest
-      run: cd .. && git clone --depth=1 https://github.com/acmesh-official/acmetest.git  && cp -r acme.sh acmetest/
+      run: cd .. && git clone --depth=1 -b dns-test-43-char-dummy https://github.com/yaoge123/acmetest.git  && cp -r acme.sh acmetest/
     - uses: vmactions/tribblix-vm@v1
       with:
         debug-on-error: ${{ vars.DEBUG_ON_ERROR }}
@@ -817,7 +817,7 @@ jobs:
     steps:
     - uses: actions/checkout@v7
     - name: Clone acmetest
-      run: cd .. && git clone --depth=1 https://github.com/acmesh-official/acmetest.git  && cp -r acme.sh acmetest/
+      run: cd .. && git clone --depth=1 -b dns-test-43-char-dummy https://github.com/yaoge123/acmetest.git  && cp -r acme.sh acmetest/
     - uses: vmactions/haiku-vm@v1
       with:
         debug-on-error: ${{ vars.DEBUG_ON_ERROR }}
@@ -878,7 +878,7 @@ jobs:
     steps:
     - uses: actions/checkout@v7
     - name: Clone acmetest
-      run: cd .. && git clone --depth=1 https://github.com/acmesh-official/acmetest.git  && cp -r acme.sh acmetest/
+      run: cd .. && git clone --depth=1 -b dns-test-43-char-dummy https://github.com/yaoge123/acmetest.git  && cp -r acme.sh acmetest/
     - uses: vmactions/hurd-vm@v1
       with:
         debug-on-error: ${{ vars.DEBUG_ON_ERROR }}
@@ -939,7 +939,7 @@ jobs:
     steps:
     - uses: actions/checkout@v7
     - name: Clone acmetest
-      run: cd .. && git clone --depth=1 https://github.com/acmesh-official/acmetest.git  && cp -r acme.sh acmetest/
+      run: cd .. && git clone --depth=1 -b dns-test-43-char-dummy https://github.com/yaoge123/acmetest.git  && cp -r acme.sh acmetest/
     - uses: vmactions/openeuler-vm@v1
       with:
         debug-on-error: ${{ vars.DEBUG_ON_ERROR }}
@@ -997,7 +997,7 @@ jobs:
     steps:
     - uses: actions/checkout@v7
     - name: Clone acmetest
-      run: cd .. && git clone --depth=1 https://github.com/acmesh-official/acmetest.git  && cp -r acme.sh acmetest/
+      run: cd .. && git clone --depth=1 -b dns-test-43-char-dummy https://github.com/yaoge123/acmetest.git  && cp -r acme.sh acmetest/
     - uses: vmactions/hardenedbsd-vm@v1
       with:
         debug-on-error: ${{ vars.DEBUG_ON_ERROR }}
@@ -1054,7 +1054,7 @@ jobs:
     steps:
     - uses: actions/checkout@v7
     - name: Clone acmetest
-      run: cd .. && git clone --depth=1 https://github.com/acmesh-official/acmetest.git  && cp -r acme.sh acmetest/
+      run: cd .. && git clone --depth=1 -b dns-test-43-char-dummy https://github.com/yaoge123/acmetest.git  && cp -r acme.sh acmetest/
     - uses: vmactions/opnsense-vm@v1
       with:
         debug-on-error: ${{ vars.DEBUG_ON_ERROR }}
